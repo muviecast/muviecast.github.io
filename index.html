@@ -247,7 +247,7 @@
       <h3 class="title is-3 purple-small-shadow">Novel view synthesis </h2>
         <h3 class="title is-4">NeRF results</h3>
     </div>
-
+    <br>
       <section class="hero is-light is-small">
         <div class="hero-body">
           <div class="container">
@@ -296,8 +296,10 @@
           </div>
         </div>
       </section>
+      <br>
+      <br>
       <div class="container is-max-desktop">
-        <h3 class="title is-4">Comparison and User Survey </h3>
+        <h3 class="title is-3 purple-small-shadow">Comparison and User Survey </h3>
         <p>
           To evaluate the effectiveness of our approach compared to the recent state-of-the-art method Artistic Radiance Fields (ARF) [Zhang et al, ECCV 22], we conducted an anonymous user survey with 40 participants.
 During the survey, participants were provided with sample scene images and style images. The evaluation was performed on five scenes from the Tanks and Temples dataset each paired with a distinct style image. 
@@ -306,6 +308,7 @@ One video was generated using the ARF method, utilizing ground truth pose inform
 To ensure a fair assessment, we adhered closely to the default trajectory employed by ARF.  
 In all NeRF experiments for our method, we extended our evaluation beyond computing radiance fields to include the direct estimation of camera calibrations from stylized images using the colmap SfM.
         </p>
+        <br>
         <style>
           /* Apply CSS to align videos vertically */
           .video-container {
@@ -322,10 +325,11 @@ In all NeRF experiments for our method, we extended our evaluation beyond comput
         
         <div class="columns is-centered">
           <div class="column content">
-            <h2 class="title is-3">ARF</h2>
+            <h2 class="title is-4">ARF</h2>
             <p>
-              The ARF video was retrieved using groundtruth pose information and the recommended parameters and trajectory, which were determined by the author.
-              <br><br>
+              The ARF videos were rendered using groundtruth pose information and the recommended parameters and trajectory, which were determined by the author.
+              The code and trajectories for ARF is publicly available at <a href="https://github.com/Kai-46/ARF-svox2">this link</a>.
+              <br>
             </p>
             <div class="video-container">
               <video id="ARF_family" autoplay controls muted loop playsinline height="400px">
@@ -347,7 +351,7 @@ In all NeRF experiments for our method, we extended our evaluation beyond comput
           </div>
         
           <div class="column content">
-            <h2 class="title is-3">Ours</h2>
+            <h2 class="title is-4">Ours</h2>
             <p>
               To demonstrate the robustness of MV consistency, we used pose information estimated from styled images. To ensure a fair assessment, we made efforts to closely follow to the default trajectory utilized by ARF.
             </p>
@@ -399,7 +403,7 @@ In all NeRF experiments for our method, we extended our evaluation beyond comput
             </p>
             <p>
               <h4 class="title is-5">Multi-View Stereo Networks</h4>
-              <a href="https://arxiv.org/pdf/1912.06378.pdf">CasMVSNet, </a> <a href="https://arxiv.org/pdf/2012.01411.pdf">PatchmatchNet </a> </p>
+              <a href="https://arxiv.org/pdf/1912.06378.pdf">CasMVSNet, </a> <a href="https://arxiv.org/pdf/2012.01411.pdf">PatchmatchNet, </a>  <a href="https://arxiv.org/abs/2203.01391.pdf">DDLMVS </a> </p>
             <p>
               <h4 class="title is-5">Style Transfer</h4>
               <a href="https://arxiv.org/abs/1508.06576">NST, </a>  <a href="https://arxiv.org/abs/1603.08155">Fast Style Transfer, </a> <a href="https://arxiv.org/abs/1703.06868">AdaIN-based Style Transfer </a>
@@ -414,10 +418,10 @@ In all NeRF experiments for our method, we extended our evaluation beyond comput
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@article{???,
+      <pre><code>@InProceedings{ibrahimli2024muviecast,
         author    = {Nail Ibrahimli, Julian F. P. Kooij, and Liangliang Nan},
         title     = {MuVieCAST: Multi-View Consistent Artistic Style Transfer},
-        journal   = {3DV},
+        booktitle = {3DV},
         year      = {2024},
       }</code></pre>
     </div>
